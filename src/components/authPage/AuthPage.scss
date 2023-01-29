@@ -1,0 +1,35 @@
+.log-form__wrapper {
+    background-image: url(../../assets/beautiful-girl-doing-exercises-simulator-gym-dressed-blank-pink-tank-top-tights-dark-background-gym-dressed-sport-clothes.jpg);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.form-wrapper {
+    width: 395px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width: 768px) {
+    .log-form__wrapper {
+        background-position: center center;
+    }
+}
+
+
+@media screen and (max-width: 576px) {
+    .log-form__wrapper {
+        background-image: url(../../assets/woman-holding-weights-near-barbells.jpg);
+        height: 100vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .form-wrapper {
+        width: 75%;
+    }
+}

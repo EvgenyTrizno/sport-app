@@ -1,0 +1,29 @@
+.reg-form__wrapper {
+    background-image: url(../../assets/close-up-man-doing-crossfit-workout.jpg);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media screen and (max-width: 768px) {
+    .reg-form__wrapper {
+        background-position: center center;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .reg-form__wrapper {
+        background-image: url(../../assets/box_alto_rendimiento.jpg);
+        height: 100vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
+.form-wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
