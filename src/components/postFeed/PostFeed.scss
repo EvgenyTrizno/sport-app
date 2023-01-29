@@ -1,0 +1,28 @@
+.post-feed {
+    height: 100vh;
+    &__menu {
+        padding: 1rem .75rem 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__menu-items {
+        display: flex;
+    }
+    &__menu-item {
+        color: #fff;
+    }
+    &__menu-item + .post-feed__menu-item {
+        margin-left: 5px;
+    }
+}
+
+.history-feed {
+    border-bottom: 1px solid #525252;
+    &__user-history {
+        margin-right: 14px;
+    }
+    &__username {
+        margin-top: 0.5rem;
+    }
+}

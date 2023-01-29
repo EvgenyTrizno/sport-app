@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 
-import SignInWith from '../signInWith/SignInWith';
+import SignInWith from '../../components/signInWith/SignInWith';
 
 import './RegisterPage.scss';
 
@@ -29,7 +29,7 @@ const RegisterPage = () => {
                         className='bg-neutral-800/70 rounded-xl h-14 mb-4 text-white p-4 outline-white' />
                     <button 
                         type='submit' 
-                        className='text-white h-10 bg-orange-600 rounded-xl uppercase hover:bg-orange-700 duration-300'>Зарегистрироваться</button>
+                        className='text-white h-10 bg-orange-600 rounded-xl uppercase hover:bg-orange-700 duration-300 text-center'>Зарегистрироваться</button>
                 </form>
                 <SignInWith/>
             </div>
