@@ -8,7 +8,7 @@ const RegisterPage = () => {
     return (
         <>
             <div className='reg-form__wrapper'></div>
-            <Link to="/auth" className='auth-link text-white absolute top-10 right-20 text-xl font-bold  hover:text-orange-600 duration-300' >Войти</Link>
+            <Link to='/auth' className='auth-link text-white absolute top-10 right-20 text-xl font-bold  hover:text-orange-600 duration-300' >Войти</Link>
             <div className='form-wrapper'>
             <h2 className='text-white text-center mb-7 text-xl font-bold uppercase'>Зарегистрировать учётную запись</h2>
                 <form className='flex flex-col'>
