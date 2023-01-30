@@ -1,0 +1,35 @@
+.history-feed {
+    display: flex;
+    overflow: hidden;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    &__wrapper {
+        display: flex;
+    }
+    &__create-history {
+        text-align: center;
+        margin-right: 0.875rem;
+    }
+    &__create-history__icon_orange {
+        color: var(--orange-600);
+    }
+    &__create-history__icon,
+    &__user-history__icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 4rem;
+        height: 4rem;
+        border: 4px solid var(--orange-600);
+        border-radius: var(--full);
+    }
+    &__user-history {
+        text-align: center;
+        color: #fff;
+    }
+    &__username {
+        color: #fff;
+    }
+}
+
+// h-16 w-16 border-solid border-orange-600 border-4 rounded-full flex justify-center items-center
