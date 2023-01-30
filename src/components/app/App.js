@@ -4,6 +4,8 @@ import PostFeed from '../postFeed/PostFeed';
 import { SignInPage, SignUpPage } from '../../pages';
 
 import '../../styles/reset.scss';
+import '../../styles/vars.scss';
+import '../../styles/global.scss';
 import './App.scss';
 
 const App = () => {
