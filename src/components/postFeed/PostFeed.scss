@@ -1,7 +1,8 @@
 .post-feed {
+    background-color: var(--bg-color);
     height: 100vh;
     &__menu {
-        padding: 1rem .75rem 0;
+        padding-top: 1rem;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -24,5 +25,18 @@
     }
     &__username {
         margin-top: 0.5rem;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .logo {
+        width: 120px;
+    }
+
+    .post-feed {
+        &__menu-item svg {
+            width: 25px;
+            height: 25px;
+        }
     }
 }
