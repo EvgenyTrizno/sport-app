@@ -1,9 +1,8 @@
-import { TbBrandMessenger } from 'react-icons/tb';
-import { BsPlusSquare } from 'react-icons/bs';
 import { IoMdNotificationsOutline } from 'react-icons/io';
 
 import HistoryFeed from '../historyFeed/HistoryFeed';
 import PostSkelet from '../postsSkelet/PostSkelet';
+import MainMenu from '../mainMenu/MainMenu';
 
 import logo from '../../assets/logo.png';
 import './PostFeed.scss';
@@ -18,12 +17,6 @@ const PostFeed = () => {
                     </a>
                     <div className="post-feed__menu-items">
                         <a href='/' className="post-feed__menu-item">
-                            <BsPlusSquare size={30}/>
-                        </a>
-                        <a href='/' className="post-feed__menu-item">
-                            <TbBrandMessenger size={30}/>
-                        </a>
-                        <a href='/' className="post-feed__menu-item">
                             <IoMdNotificationsOutline size={30}/>
                         </a>
                     </div>
@@ -33,6 +26,7 @@ const PostFeed = () => {
             <div className="post">
                 <PostSkelet/>
             </div>
+            <MainMenu/>
         </div>
     );
 };

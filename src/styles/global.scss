@@ -7,3 +7,10 @@
     padding-top: 1.25rem;
     padding-bottom: 1.25rem;
 }
+
+.user-avatar {
+    border: none;
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+}

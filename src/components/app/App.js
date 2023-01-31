@@ -1,7 +1,6 @@
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 
-import PostFeed from '../postFeed/PostFeed';
-import { SignInPage, SignUpPage } from '../../pages';
+import { SignInPage, SignUpPage, MainPage, SearchPage, MessengerPage } from '../../pages';
 
 import '../../styles/reset.scss';
 import '../../styles/vars.scss';
@@ -19,7 +18,13 @@ const App = () => {
                     <SignInPage/>
                 </Route>
                 <Route exact path='/feed'>
-                    <PostFeed/>
+                    <MainPage/>
+                </Route>
+                <Route exact path='/search'>
+                    <SearchPage/>
+                </Route>
+                <Route exact path='/messenger'>
+                    <MessengerPage/>
                 </Route>
             </Switch>
         </Router>
