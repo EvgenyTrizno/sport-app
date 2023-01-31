@@ -1,0 +1,22 @@
+.main-menu {
+    background-color: var(--bg-color);
+    &__inner {
+        padding: 0.75rem;
+    }
+    &__icons {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .main-menu {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        background-color: var(--bg-color);
+        z-index: 10;
+        color: #fff;
+    }
+}
