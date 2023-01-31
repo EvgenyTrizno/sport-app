@@ -1,0 +1,29 @@
+.messages-list {
+    &__message {
+        padding-left: 1rem;
+        display: flex;
+    }
+    &__message + .messages-list__message {
+        margin-top: 1rem;
+    }
+    &__message-user-avatar {
+        border-radius: var(--full);
+        border: 1px solid var(--orange-600);
+        width: 50px;
+        height: 50px;
+    }
+    &__message-username {
+        font-size: 15px;
+        margin-left: 1rem;
+    }
+    &__user-data {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    &__message-spoiler {
+        font-size: 13px;
+        margin-top: 0.15rem;
+        color: var(--tags-color);
+    }
+}
