@@ -1,0 +1,36 @@
+.messenger {
+    background-color: var(--bg-color);
+    height: 100vh;
+    color: #fff;
+    &__search-input {
+        background-color: var(--input-color);
+        border-top-right-radius: var(--input-radius);
+        border-bottom-right-radius: var(--input-radius);
+        padding: var(--input-padding);
+        padding-left: 0.75rem;
+        width: 100%;
+    }
+    &__search {
+        display: flex;
+        padding: 1rem 0.95rem;
+    }
+    &__search-btn {
+        background-color: var(--input-color);
+        border-top-left-radius: var(--input-radius);
+        border-bottom-left-radius: var(--input-radius);
+        padding: var(--input-padding);
+        padding-right: 0;
+    }
+    &__management {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__management-menu {
+        display: flex;
+        padding-top: 1rem;
+    }
+    option {
+        background-color: var(--bg-color);
+    }
+}
