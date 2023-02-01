@@ -5,7 +5,7 @@ const ShortVideo = () => {
         <div className='short-video'>
             <div className="container">
                 <div className="short-video__inner">
-                    <video src="https://www.youtube.com/watch?v=nUbKDARm_jk">
+                    <video src="">
                             
                     </video>
                 </div>
