@@ -16,7 +16,7 @@ const PostSkelet = () => {
                         className='post__user-avatar'
                         src={avatar} 
                         alt="user avatar" />
-                    <p className='post__username verified-user'>
+                    <p className='post__username username verified-user'>
                         username
                     </p>
                     <div className="post__username-settings">

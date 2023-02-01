@@ -14,3 +14,16 @@
     height: 40px;
     object-fit: cover;
 }
+
+.username {
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 1rem;
+}
+
+.verified-user::after {
+    content: url(../assets/star.png);
+    display: flex;
+    align-items: center;
+    margin-left: 0.55rem;
+}

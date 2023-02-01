@@ -1,6 +1,6 @@
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 
-import { SignInPage, SignUpPage, MainPage, SearchPage, MessengerPage } from '../../pages';
+import { SignInPage, SignUpPage, MainPage, SearchPage, MessengerPage, ProfilePage, CreatePostPage, ShortVideoPage } from '../../pages';
 
 import '../../styles/reset.scss';
 import '../../styles/vars.scss';
@@ -25,6 +25,15 @@ const App = () => {
                 </Route>
                 <Route exact path='/messenger'>
                     <MessengerPage/>
+                </Route>
+                <Route exact path='/profile'>
+                    <ProfilePage/>
+                </Route>
+                <Route exact path='/create-post'>
+                    <CreatePostPage/>
+                </Route>
+                <Route exact path='/short-video'>
+                    <ShortVideoPage/>
                 </Route>
             </Switch>
         </Router>

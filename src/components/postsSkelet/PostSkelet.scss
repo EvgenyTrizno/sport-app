@@ -18,8 +18,6 @@
         display: flex;
         align-items: center;
         margin-left: 0.75rem;
-        font-size: 18px;
-        font-weight: 500; 
     }
     &__username-settings {
         position: absolute;
@@ -46,13 +44,4 @@
     &__tags {
         color: var(--tags-color);
     }
-}
-
-.verified-user::after {
-    content: url(../../assets/star.png);
-    width: 40px;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    margin-left: 0.55rem;
 }
