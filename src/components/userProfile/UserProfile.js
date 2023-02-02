@@ -8,43 +8,47 @@ const UserProfile = () => {
         <div className='profile'>
             <div className="container">
                 <div className="profile__user-data">
-                    <div className="profile__user-data__inner">
-                        <img src={avatar} alt="" className="profile__user-avatar" />
-                        <p className="profile__username username">
-                            Username
-                        </p>
+                    <img src={avatar} alt="user avatar" className='profile__user-avatar'/>
+                    <p className='profile__username username'>
+                        Username
+                    </p>
+                </div>
+                <div className="profile__user-successes">
+                    <div className="profile__user-successe">
+                        <p>1</p>
+                        <span>Посты</span>
                     </div>
-                    <div className="profile__user-data__successes">
-                        <div className="profile__user-data__successes-item">
-                            <span>
-                                1,000
-                            </span>
-                            <h3>
-                                Посты
-                            </h3>
-                        </div>
-                        <div className="profile__user-data__successes-item">
-                            <span>
-                                1M
-                            </span>
-                            <h3>
-                                Подписчиков
-                            </h3>
-                        </div>
-                        <div className="profile__user-data__successes-item">
-                            <span>
-                                10
-                            </span>
-                            <h3>
-                                Подписки
-                            </h3>
-                        </div>
+                    <div className="profile__user-successe">
+                        <p>1M</p>
+                        <span>Подписчиков</span>
+                    </div>
+                    <div className="profile__user-successe">
+                        <p>10</p>
+                        <span>Подписки</span>
                     </div>
                 </div>
-                <div className="profile__more">
-                    <p className="profile__more-title">
-                        Описание
-                    </p>
+                <div className="profile__menu">
+                    <div className="profile__menu-inner">
+                        <button className="profile__menu-btn">
+                            Посты
+                        </button>
+                        <button className="profile__menu-btn">
+                            Видео
+                        </button>
+                    </div>
+                </div>
+                <div className="content">
+                    <div className="profile__user-content">
+                        <div>
+                            <img src={avatar} alt="" />
+                        </div>
+                        <div>
+                            <img src={avatar} alt="" />
+                        </div>
+                        <div>
+                            <img src={avatar} alt="" />
+                        </div>
+                    </div>
                 </div>
             </div>
             <MainMenu/>

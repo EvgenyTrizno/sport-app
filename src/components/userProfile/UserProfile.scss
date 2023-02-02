@@ -3,51 +3,57 @@
     height: 100vh;
     color: #fff;
     &__user-data {
-        padding: 1rem;
-        padding-bottom: 0;
-        display: flex;
-    }
-    &__user-data__inner {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        text-align: center;
+        padding: 4rem 0 1rem;
     }
     &__user-avatar {
-        width: 85px;
-        height: 85px;
+        display: block;
+        margin: 0 auto;
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
         border-radius: var(--full);
         border: 2px solid var(--orange-600);
-        object-fit: cover;
     }
     &__username {
-        margin: 0.5rem 0 0 0 !important;
+        font-size: 20px;
+        margin: 0;
+        margin-top: 0.5rem;
     }
-    &__user-data__successes {
+    &__user-successes {
         display: flex;
         align-items: center;
-        padding: 0 1rem;
-        margin-bottom: 2rem;
+        justify-content: center;
     }
-    &__user-data__successes-item {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        span {
-            margin-top: 0.25rem;
-            font-size: 20px;
+    &__user-successe {
+        text-align: center;
+        p {
+            font-size: 18px;
         }
-        h3 {
+        span {
             font-size: 12px;
         }
     }
-    &__user-data__successes-item + .profile__user-data__successes-item {
+    &__user-successe + .profile__user-successe {
         margin-left: 1rem;
     }
-    &__more {
-        padding: 0 1rem;
+    &__user-content {
+        display: grid;
+        grid-gap: 3px 3px;
+        grid-template-columns: repeat(3, 1fr);
+        img {
+            object-fit: cover;
+            width: 150px;
+            height: 150px;
+            width: 100%;
+        }
     }
-    &__more-title {
-        font-size: 20px;
-        text-align: center;
+    &__menu-inner {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 1.25rem;
     }
-}
+    &__menu-btn {
+        text-transform: uppercase;
+    }
+}   

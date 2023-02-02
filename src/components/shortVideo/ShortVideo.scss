@@ -1,4 +1,37 @@
 .short-video {
     background-color: var(--bg-color);
     height: 100vh;
+    &__player {
+        width: 100%;
+        height: 100vh;
+        position: relative;
+        overflow: hidden;
+        video {
+            border-top-left-radius: 0.75rem;
+            border-top-right-radius: 0.75rem;
+            height: 100vh;
+            object-fit: cover;
+            overflow: hidden;
+        }
+    }
+}
+
+.controls {
+    &__stop {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%);
+        color: var(--orange-600);
+        pointer-events: none;
+    }
+    &__progress-bg {
+        position: absolute;
+        background-color: var(--orange-600);
+        width: 10px;
+        height: 5px;
+        border-radius: 15px;
+        bottom: 0;
+    }
 }
