@@ -1,6 +1,8 @@
 .short-video {
     background-color: var(--bg-color);
     height: 100vh;
+    color: #fff;
+    overflow-y: hidden;
     &__player {
         width: 100%;
         height: 100vh;
@@ -14,6 +16,26 @@
             overflow: hidden;
         }
     }
+    &__user {
+        position: absolute;
+        bottom: 30px;
+        left: 10px;
+    }
+    &__user-avatar {
+        display: block;
+        border-radius: var(--full);
+        width: 50px;
+        height: 50px;
+        object-fit: cover;
+        border: 2px solid var(--orange-600);
+    }
+    &__user-inner {
+        display: flex;
+        align-items: center;
+    }
+    &__username {
+        margin: 0 0.5rem;
+    }
 }
 
 .controls {
@@ -25,13 +47,29 @@
         transform: translate(-50%, -50%);
         color: var(--orange-600);
         pointer-events: none;
+        opacity: 0;
     }
     &__progress-bg {
         position: absolute;
         background-color: var(--orange-600);
         width: 10px;
         height: 5px;
-        border-radius: 15px;
+        border-radius: 0.95rem;
         bottom: 0;
+    }
+    &__menu {
+        position: absolute;
+        right: 10px;
+        top: 40%;
+    }
+    &__menu-item + .controls__menu-item {
+        margin-top: 1rem;
+    }
+    &__menu-item {
+        text-align: center;
+        line-height: 1rem;
+    }
+    &__menu span {
+        font-size: 12px;
     }
 }

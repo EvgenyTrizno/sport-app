@@ -1,6 +1,8 @@
 import { useCallback, useState } from 'react';
-import { FaPause } from 'react-icons/fa';
+import { FaPause, FaShare } from 'react-icons/fa';
+import { AiFillLike, AiFillDislike, AiOutlineComment } from 'react-icons/ai';
 
+import avatar from '../../assets/close-up-woman-doing-crossfit-workout.jpg';
 import video from '../../assets/video/video.mp4';
 import './ShortVideo.scss';
 
@@ -41,6 +43,40 @@ const ShortVideo = () => {
                         </div>
                         <div className="controls__progress">
                             <div className="controls__progress-bg" style={{width: `${progress}%`}}></div>
+                        </div>
+                        <div className="controls__menu">
+                            <div className="controls__menu-item">
+                                <span>
+                                    <AiFillLike size={35}/>
+                                    10к
+                                </span>
+                            </div>
+                            <div className="controls__menu-item">
+                                <span>
+                                    <AiFillDislike size={35}/>
+                                </span>
+                            </div>
+                            <div className="controls__menu-item">
+                                <span>
+                                    <AiOutlineComment size={35}/>
+                                    10
+                                </span>
+                            </div>
+                            <div className="controls__menu-item">
+                                <span>
+                                    <FaShare size={35}/>
+                                    500
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="short-video__user">
+                        <div className='short-video__user-inner'>
+                            <img src={avatar} alt="user avatar" className='short-video__user-avatar'/>
+                            <p className='short-video__username'>username</p>
+                            <button className="subscribe-btn short-video__subscribe-btn">
+                                Подписаться
+                            </button>
                         </div>
                     </div>
                 </div>
